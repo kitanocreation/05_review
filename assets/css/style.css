@@ -1,0 +1,657 @@
+/* --- reset --- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p, div {
+  word-break: break-all;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type=text], select {
+  border-radius: 3px;
+  border: none;
+  padding: 6px;
+  font-size: inheirt;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #B5B5B5;
+  font-size: 12px;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+.clearfix {
+  display: block;
+}
+
+.clearfix::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.bx-wrapper {
+  box-shadow: none !important;
+}
+
+.bx-controls-direction a {
+  z-index: 0 !important;
+}
+
+* {
+  font-family: "Noto Sans JP", serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #414143;
+  letter-spacing: 0.04em;
+  line-height: 17px;
+}
+
+html, body {
+  width: 100vw;
+}
+
+.review-fv, main, section {
+  width: 100%;
+}
+
+a {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+html body {
+  background-color: #FFF2E3;
+}
+html body .review-fv {
+  width: 100%;
+  height: 100vw;
+}
+html body .review-fv .review-bgImg {
+  width: 100%;
+  height: 100%;
+  background-color: #D9D9D9;
+}
+html body .review_main {
+  margin-top: 40px;
+}
+html body .review_main .review-flow h2, html body .review_main .review-about h2, html body .review_main .review-how h2, html body .review_main .review-notice h2 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.5em;
+  color: #7B0414;
+  text-align: center;
+}
+html body .review_main .review-flow h2 span, html body .review_main .review-about h2 span, html body .review_main .review-how h2 span, html body .review_main .review-notice h2 span {
+  display: block;
+  font-family: "copperplate", serif;
+  font-weight: bold;
+  color: #FEA554;
+}
+html body .review_main .review-flow .review-container {
+  width: calc(100% - 32px);
+  margin: 24px auto 0 auto;
+}
+html body .review_main .review-flow .review-container .review-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+html body .review_main .review-flow .review-container .review-con .review-bgImg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+html body .review_main .review-flow .review-container .review-con h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFFFF;
+}
+html body .review_main .review-flow .review-container .review-con h3 span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+}
+html body .review_main .review-flow .review-container .review-con p {
+  color: #FFFFFF;
+  text-align: center;
+}
+html body .review_main .review-flow .review-container .review-con:nth-of-type(1) {
+  width: 63vw;
+  height: 53vw;
+}
+html body .review_main .review-flow .review-container .review-con:nth-of-type(1) .review-bgImg {
+  background-color: #0073C8;
+}
+html body .review_main .review-flow .review-container .review-con:nth-of-type(1) h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+html body .review_main .review-flow .review-container .review-con:nth-of-type(1) h3 span {
+  color: #0073C8;
+}
+html body .review_main .review-flow .review-container .review-con:nth-of-type(2) {
+  width: 53vw;
+  height: 37vw;
+  margin-left: calc(47vw - 32px);
+}
+html body .review_main .review-flow .review-container .review-con:nth-of-type(2) .review-bgImg {
+  background-color: #FF532E;
+}
+html body .review_main .review-flow .review-container .review-con:nth-of-type(2) h3 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+html body .review_main .review-flow .review-container .review-con:nth-of-type(2) h3 span {
+  color: #FF532E;
+}
+html body .review_main .review-flow .review-container .review-con:nth-of-type(2) p {
+  font-size: 12px;
+  line-height: 1.5em;
+}
+html body .review_main .review-flow .review-container .review-con:nth-of-type(3) {
+  width: 53vw;
+  height: 53vw;
+}
+html body .review_main .review-flow .review-container .review-con:nth-of-type(3) .review-bgImg {
+  background-color: #D8A900;
+}
+html body .review_main .review-flow .review-container .review-con:nth-of-type(3) h3 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+html body .review_main .review-flow .review-container .review-con:nth-of-type(3) h3 span {
+  color: #D8A900;
+}
+html body .review_main .review-about, html body .review_main .review-how {
+  margin: 60px auto 0 auto;
+}
+html body .review_main .review-about {
+  width: calc(100% - 32px);
+  background-color: #FFFFFF;
+  padding: 40px 0;
+}
+html body .review_main .review-about ul {
+  width: calc(100% - 32px);
+  margin: 40px auto 0 auto;
+}
+html body .review_main .review-about ul li {
+  margin-top: 24px;
+}
+html body .review_main .review-about ul li h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 19px;
+}
+html body .review_main .review-about ul li h3 span {
+  width: 32px;
+  height: 3px;
+  background-color: #F1BD00;
+}
+html body .review_main .review-about ul li h3 span:nth-of-type(1) {
+  margin-right: 10px;
+}
+html body .review_main .review-about ul li h3 span:nth-of-type(2) {
+  margin-left: 10px;
+}
+html body .review_main .review-about ul li p {
+  margin-top: 12px;
+}
+html body .review_main .review-about ul li:nth-of-type(1) {
+  margin-top: 0;
+}
+html body .review_main .review-about ul li:nth-of-type(1) p {
+  text-align: center;
+}
+html body .review_main .review-about ul li:nth-of-type(4) p:nth-of-type(1) {
+  margin-top: 12px;
+  text-align: center;
+}
+html body .review_main .review-about ul li:nth-of-type(4) p:nth-of-type(3) {
+  margin-top: 40px;
+}
+html body .review_main .review-how {
+  width: calc(100% - 48px);
+}
+html body .review_main .review-how article {
+  border-left: solid 4px #F1BD00;
+  background-color: #FFFFFF;
+  padding-bottom: 24px;
+  margin-top: 40px;
+  position: relative;
+}
+html body .review_main .review-how article .review-step {
+  width: 21vw;
+  height: 21vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-24px, -28px);
+}
+html body .review_main .review-how article .review-step .review-bgImg {
+  width: 100%;
+  height: 100%;
+  background-color: #F1BD00;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+html body .review_main .review-how article .review-step p {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5em;
+  color: #FFFFFF;
+  line-height: 1em;
+  white-space: wrap;
+}
+html body .review_main .review-how article .review-step p span {
+  font-size: 12px;
+  line-height: 1.5em;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 1em;
+}
+html body .review_main .review-how article h3 {
+  width: 64vw;
+  padding-top: 24px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 19px;
+}
+html body .review_main .review-how article p {
+  width: 64vw;
+  margin: 8px auto 0 auto;
+  white-space: nowrap;
+}
+html body .review_main .review-how article .review-img {
+  width: 64vw;
+  height: 64vw;
+  background-color: #D9D9D9;
+  margin: 24px auto 0 auto;
+}
+html body .review_main .review-how article:nth-of-type(1) {
+  margin-top: 60px;
+}
+html body .review_main .review-how .review-annotation {
+  margin-top: 12px;
+}
+html body .review_main .review-how .review-button {
+  width: calc(100vw - 64px);
+  margin: 60px auto 0 auto;
+}
+html body .review_main .review-how .review-button p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #282828;
+  text-align: center;
+}
+html body .review_main .review-how .review-button p span:nth-of-type(1), html body .review_main .review-how .review-button p span:nth-of-type(3) {
+  display: block;
+  width: 1px;
+  height: 18px;
+  background-color: #282828;
+}
+html body .review_main .review-how .review-button p span:nth-of-type(1) {
+  margin-right: 7.5px;
+  transform: rotate(-45deg);
+}
+html body .review_main .review-how .review-button p span:nth-of-type(2) {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5em;
+  color: #F1BD00;
+  line-height: 24px;
+}
+html body .review_main .review-how .review-button p span:nth-of-type(3) {
+  margin-left: 7.5px;
+  transform: rotate(45deg);
+}
+html body .review_main .review-how .review-button a {
+  display: block;
+  width: 100%;
+  height: 48px;
+  border-radius: 30px;
+  background-color: #AE0414;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5em;
+  color: #FFFFFF;
+}
+html body .review_main .review-notice {
+  width: calc(100% - 32px);
+  background-color: #FFFFFF;
+  padding-bottom: 40px;
+  margin: 60px auto 0 auto;
+}
+html body .review_main .review-notice h2 {
+  padding-top: 40px;
+}
+html body .review_main .review-notice ul {
+  width: 85%;
+  margin: 40px 16px 0 calc(15% - 16px);
+}
+html body .review_main .review-notice ul li {
+  position: relative;
+}
+html body .review_main .review-notice ul li span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #282828;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-14px, 7px);
+}
+
+/* --- reset --- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p, div {
+  word-break: break-all;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type=text], select {
+  border-radius: 3px;
+  border: none;
+  padding: 6px;
+  font-size: inheirt;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #B5B5B5;
+  font-size: 12px;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+.clearfix {
+  display: block;
+}
+
+.clearfix::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.bx-wrapper {
+  box-shadow: none !important;
+}
+
+.bx-controls-direction a {
+  z-index: 0 !important;
+}
+
+* {
+  font-family: "Noto Sans JP", serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #414143;
+  letter-spacing: 0.04em;
+  line-height: 17px;
+}
+
+html, body {
+  width: 100vw;
+}
+
+.review-fv, main, section {
+  width: 100%;
+}
+
+a {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+/* --- reset --- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p, div {
+  word-break: break-all;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type=text], select {
+  border-radius: 3px;
+  border: none;
+  padding: 6px;
+  font-size: inheirt;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #B5B5B5;
+  font-size: 12px;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+.clearfix {
+  display: block;
+}
+
+.clearfix::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.bx-wrapper {
+  box-shadow: none !important;
+}
+
+.bx-controls-direction a {
+  z-index: 0 !important;
+}
+
+* {
+  font-family: "Noto Sans JP", serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #414143;
+  letter-spacing: 0.04em;
+  line-height: 17px;
+}
+
+html, body {
+  width: 100vw;
+}
+
+.review-fv, main, section {
+  width: 100%;
+}
+
+a {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  * {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+@media screen and (min-width: 768px) {
+  html body .review-fv {
+    height: 60vw;
+  }
+  html body .review_main {
+    margin-top: 60px;
+  }
+  html body .review_main .review-flow h2, html body .review_main .review-about h2, html body .review_main .review-how h2, html body .review_main .review-notice h2 {
+    font-size: 32px;
+  }
+  html body .review_main .review-flow .review-container {
+    width: calc(100% - 200px);
+    margin: 60px auto 0 auto;
+  }
+}
