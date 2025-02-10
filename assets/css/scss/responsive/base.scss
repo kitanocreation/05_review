@@ -1,0 +1,37 @@
+@import '../base';
+
+@media screen and (min-width: 768px) {
+    
+    * {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .review-sp {
+        display: none;
+    }
+
+    .review-pc {
+        display: block;
+    }
+}
+
+@mixin font_llll-pc {
+    font-size: 32px;
+}
+
+@mixin font_ll-pc {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+}
+
+@mixin font_m-pc {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+@mixin h2-pc {
+    @include font_llll-pc;
+}
