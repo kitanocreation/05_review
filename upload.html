@@ -19,10 +19,55 @@
 <link rel="stylesheet" href="https://use.typekit.net/sbb8lig.css">
 <link rel="stylesheet" href="https://gigaplus.makeshop.jp/kitanoace/08_review/lp/css/style3.css">
 <style>
+    .review_main {
+        position: relative;
+    }
+    .review-fv, .review_main {
+        background-color: #FFF2E3;
+    }
+    .review_main::after, footer::after {
+        content: '';
+        width: 100vw;
+        background-color: #FFF2E3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-100%);
+    }
+    .review_main::after {
+        height: 40px;
+    }
+    footer::after {
+        height: 50px;
+    }
     .review-flow h2 span, .review-about h2 span, .review-how h2 span, .review-notice h2 span {
         margin-left: 0;
         font-size: 14px;
         line-height: 17px;
+    }
+    .header {
+        z-index: 9999;
+    }
+    .header .postage p, #g-nav, .footer a {
+        font-size: 13px;
+        letter-spacing: 0;
+    }
+    .nav-contact li {
+        font-size: 14px;
+    }
+    .footer p {
+    	font-size: 14px;
+    	letter-spacing: 0;
+    }
+    .nav-contact li, .gnav li a, .bnav li a, .bnav li p, .footer-nav li a, .footer-text span, .copyright {
+        letter-spacing: 0;
+    }
+    .footer-nav li a {
+        font-size: 14px;
+    }
+    .clearfix {
+        position: relative;
+        z-index: 0;
     }
     footer {
         margin-top: 50px;
@@ -30,6 +75,13 @@
     @media screen and (min-width: 768px) {
         .review-fv {
             margin-top: 147.5px;
+        }
+        .review_main::after {
+            height: 60px;
+        }
+    	bottom-nav {
+            font-size: 14px;
+            letter-spacing: 0;
         }
     }
 </style>
@@ -41,7 +93,7 @@
 <script src="" defer></script>
 <{$module.meta_down}>
 
-<body>
+<body style="background-color: #FFFFFF;">
 
     <!-- GTM : スライドバナー -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NB98GKXV"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -66,30 +118,30 @@
                 <span>CAMPAIGN FLOW</span>
             </h2>
             <div class="review-container">
-                <div class="review-container-bgImg review-sp"><img src="https://gigaplus.makeshop.jp/kitanoace/08_review/lp/img/line.svg" alt=""></div>
-                <div class="review-container-bgImg review-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/08_review/lp/img/responsive/line.svg" alt=""></div>
+                <div class="review-container-bgImg review-sp" style="z-index: 0;"><img src="https://gigaplus.makeshop.jp/kitanoace/08_review/lp/img/line.svg" alt=""></div>
+                <div class="review-container-bgImg review-pc" style="z-index: 0;"><img src="https://gigaplus.makeshop.jp/kitanoace/08_review/lp/img/responsive/line.svg" alt=""></div>
                 <div class="review-con">
-                    <div class="review-bgImg"><img src="https://gigaplus.makeshop.jp/kitanoace/08_review/lp/img/icon1.svg" alt=""></div>
-                    <h3>
+                    <div class="review-bgImg" style="z-index: 0;"><img src="https://gigaplus.makeshop.jp/kitanoace/08_review/lp/img/icon1.svg" alt=""></div>
+                    <h3 style="z-index: 1;">
                         <span>1</span>
                         ご購入
                     </h3>
-                    <p>&#8251;過去のご購入でもOK</p>
+                    <p style="z-index: 1;">&#8251;過去のご購入でもOK</p>
                 </div>
                 <div class="review-con">
-                    <div class="review-bgImg"><img src="https://gigaplus.makeshop.jp/kitanoace/08_review/lp/img/icon2.svg" alt=""></div>
-                    <h3>
+                    <div class="review-bgImg" style="z-index: 0;"><img src="https://gigaplus.makeshop.jp/kitanoace/08_review/lp/img/icon2.svg" alt=""></div>
+                    <h3 style="z-index: 1;">
                         <span>2</span>
                         レビューを投稿
                     </h3>
-                    <p>
+                    <p style="z-index: 1;">
                         &#8251;キャンペーン期間内に<br>
                         レビュー投稿をお願いします。
                     </p>
                 </div>
                 <div class="review-con">
-                    <div class="review-bgImg"><img src="https://gigaplus.makeshop.jp/kitanoace/08_review/lp/img/icon3_re.svg" alt=""></div>
-                    <h3>
+                    <div class="review-bgImg" style="z-index: 0;"><img src="https://gigaplus.makeshop.jp/kitanoace/08_review/lp/img/icon3_re.svg" alt=""></div>
+                    <h3 style="z-index: 1;">
                         <span>3</span>
                         投稿翌月に<br>
                         100ポイント<br>
@@ -106,7 +158,7 @@
             <ul>
                 <li>
                     <h3><span></span>キャンペーン期間<span></span></h3>
-                    <p>2025年3月1日 0:00〜2025年3月31日 23:59</p>
+                    <p>2025年3月1日 0:00&#12316;2025年3月31日 23:59</p>
                 </li>
                 <li>
                     <h3><span></span>キャンペーン内容<span></span></h3>
@@ -125,7 +177,7 @@
                 </li>
                 <li>
                     <h3><span></span>ポイント付与期限<span></span></h3>
-                    <p>2025年4月1日〜</p>
+                    <p>2025年4月1日&#12316;</p>
                     <p>&#8251;投稿月の翌月上旬に行います。レビューは内容を承認してからの公開となり、反映までにお時間をいただくことがございます。</p>
                     <p>
                         <span>
@@ -183,7 +235,7 @@
                     <p class="review-sp">
                         注文履歴のページからレビューを書きた<br>
                         い商品を選び、「この商品のレビューを<br>
-                        書く」、ボタンをタップしてくださ<br>
+                        書く」ボタンをタップしてくださ<br>
                         い。
                     </p>
                     <p class="review-pc">レビューを投稿したい商品をクリックしてください。商品詳細ページへ移動します。</p>
